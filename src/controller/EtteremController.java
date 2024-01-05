@@ -1,5 +1,7 @@
 package controller;
 
+import modell.Allapotok;
+import modell.Desszert;
 import modell.Etel;
 import modell.EtteremModel;
 import view.EtteremView;
@@ -15,6 +17,11 @@ public class EtteremController {
 
     public void rendelEtel(Etel etel) {
         etteremModel.rendelEtel(etel);
-        etteremView.megjelenitEtelInfo(etteremModel.getRendeltEtel());
+        etteremView.megjelenitEtelInfo(etel, etteremModel.getEtelAllapot());
+    }
+
+    public void rendelDesszert(Desszert desszert) {
+        etteremModel.rendelDesszert(desszert);
+        etteremView.megjelenitDesszertInfo(desszert, etteremModel.getDesszertAllapot());
     }
 }

@@ -8,7 +8,7 @@ public class Leves extends Etel {
         this.csipos = csipos;
     }
 
-       public void foltElkerules() {
+    public void foltElkerules() {
         System.out.println("A " + getNev() + " leves csipős, vigyázz, ne csöpögjön a ruhádra!");
     }
 

@@ -1,15 +1,15 @@
 package modell;
 
 public class Foetel extends Etel {
-    private String fuszerzes;
+    private String fuszerezes;
 
-    public Foetel(String nev, double ar, String fuszerzes) {
+    public Foetel(String nev, double ar, String fuszerezes) {
         super(nev, ar);
-        this.fuszerzes = fuszerzes;
+        this.fuszerezes = fuszerezes;
     }
 
-    public void specialisFuszerzes() {
-        System.out.println("A " + getNev() + " főétel különlegesen fűszerezett: " + fuszerzes);
+    public void specialisFuszerezes() {
+        System.out.println("A " + getNev() + " főétel különlegesen fűszerezett: " + fuszerezes);
     }
 
     @Override

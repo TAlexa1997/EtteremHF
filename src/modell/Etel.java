@@ -10,7 +10,7 @@ public abstract class Etel {
     }
 
     public void elkeszit() {
-        System.out.println(nev + " elkészült!");
+        System.out.println("A/Az " + nev + " elkészült!");
     }
 
     public abstract void fogyaszt();
